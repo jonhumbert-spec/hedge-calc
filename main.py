@@ -51,9 +51,9 @@ st.divider()
 st.subheader("Hedgley says...")
 res_col1, res_col2, res_col3 = st.columns(3)
 
-res_col1.metric("Hedge Wager", f"${w2:.2f}")
-res_col2.metric("Net Profit", f"${net_profit:.2f}")
-res_col3.metric("ROI", f"{roi:.2f}%")
+res_col1.metric("Bet this amount", f"${w2:.2f}")
+res_col2.metric("To profit", f"${net_profit:.2f}")
+res_col3.metric("With ROI", f"{roi:.2f}%")
 
 if net_profit > 0:
 	st.success(f"✅ Cash it! You've been #HedgleyBlessed 🦔")
