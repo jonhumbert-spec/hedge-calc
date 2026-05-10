@@ -45,7 +45,7 @@ total_invested = w1 + w2
 net_profit = total_payout - total_invested
 roi = (net_profit / total_invested) * 100
 
----
+st.divider()
 
 # Results Section
 st.subheader("Strategy Summary")
