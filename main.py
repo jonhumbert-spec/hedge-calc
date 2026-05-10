@@ -20,7 +20,7 @@ st.markdown("""
 st.title("🎯 Professional Hedge Calculator")
 st.write("Determine the exact wager needed to guarantee a return on your investment.")
 
----
+st.divider()
 
 # Input Section
 col1, col2 = st.columns(2)
