@@ -17,7 +17,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🦔 Hedgley - The Hedging Calculator")
+st.title("🦔 Hedgley The Hedging Calculator")
 st.write("Put your current wager amount and the odds. Then type the odds for the bet you're using to hedge.")
 
 st.divider()
@@ -56,9 +56,9 @@ res_col2.metric("Net Profit", f"${net_profit:.2f}")
 res_col3.metric("ROI", f"{roi:.2f}%")
 
 if net_profit > 0:
-	st.success(f"✅ Cash it: Hedge away, winner.")
+	st.success(f"✅ Cash it! You've been #HedgleyBlessed 🦔")
 else:
-    st.warning("⚠️ Spines out! Based on your existing bet, the market's current odds won't help you guarantee a profit with a hedge.")
+    st.warning("⚠️😡 Spines out! Based on your existing bet, the market's current odds won't help you guarantee a profit with a hedge.")
 
 # Visualizing the Outcomes
 with st.expander("See Outcome Breakdown"):
