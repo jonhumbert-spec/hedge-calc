@@ -7,7 +7,7 @@ def to_decimal(american):
     return (100 / abs(american)) + 1
 
 # Page Config & Styling
-st.set_page_config(page_title="Pro Hedge Calculator", page_icon="📈")
+st.set_page_config(page_title="Hedgley", page_icon="📈")
 
 # Custom CSS for a "Sportsbook" feel
 st.markdown("""
@@ -26,12 +26,12 @@ st.divider()
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("Original Position")
+    st.subheader("Existing bet")
     w1 = st.number_input("Original Wager ($)", value=100.0, step=10.0)
     a1 = st.number_input("Original Odds (American)", value=250, help="e.g., +250 or -110")
 
 with col2:
-    st.subheader("The Hedge")
+    st.subheader("Hedge opportunity")
     a2 = st.number_input("Hedge Odds (American)", value=-150, help="The current market odds for the opposing side")
 
 # Backend Logic
@@ -56,9 +56,7 @@ res_col2.metric("Net Profit", f"${net_profit:.2f}")
 res_col3.metric("ROI", f"{roi:.2f}%")
 
 if net_profit > 0:
-    st.success(f"✅ Arbitrage Opportunity: Bet **${w2:,.2f}** on the hedge to lock in **${net_profit:,.2f}** profit.")
-else:
-    st.warning("⚠️ Negative Hedge: This market does not currently allow for a guaranteed profit.")
+    st.warning("⚠️ Spines out! Based on your existing bet, the market's current odds won't help you guarantee a profit with a hedge.")
 
 # Visualizing the Outcomes
 with st.expander("See Outcome Breakdown"):
