@@ -48,7 +48,7 @@ roi = (net_profit / total_invested) * 100
 st.divider()
 
 # Results Section
-st.subheader("Strategy Summary")
+st.subheader("Hedgley says...")
 res_col1, res_col2, res_col3 = st.columns(3)
 
 res_col1.metric("Hedge Wager", f"${w2:.2f}")
