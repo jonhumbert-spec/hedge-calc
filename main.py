@@ -56,7 +56,7 @@ res_col2.metric("Net Profit", f"${net_profit:.2f}")
 res_col3.metric("ROI", f"{roi:.2f}%")
 
 if net_profit > 0:
-	st.success(f"✅ Cash it: Bet **${w2:,.2f}* on the hedge to lock in *${net_profit:,.2f}** profit.")
+	st.success(f"✅ Cash it: Hedge away, winner.")
 else:
     st.warning("⚠️ Spines out! Based on your existing bet, the market's current odds won't help you guarantee a profit with a hedge.")
 
