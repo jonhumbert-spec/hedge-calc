@@ -17,8 +17,8 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🎯 Professional Hedge Calculator")
-st.write("Determine the exact wager needed to guarantee a return on your investment.")
+st.title("🦔 Hedgley - The Hedging Calculator")
+st.write("Put your current wager amount and the odds. Then type the odds for the bet you're using to hedge.")
 
 st.divider()
 
