@@ -56,7 +56,7 @@ res_col2.metric("Net Profit", f"${net_profit:.2f}")
 res_col3.metric("ROI", f"{roi:.2f}%")
 
 if net_profit > 0:
-    st.success(f"✅ Arbitrage Opportunity: Bet **${w2:,.2f}** on the hedge to lock in **${net_profit:,.2f}**.")
+    st.success(f"✅ Arbitrage Opportunity: Bet **${w2:,.2f}** on the hedge to lock in **${net_profit:,.2f}** profit.")
 else:
     st.warning("⚠️ Negative Hedge: This market does not currently allow for a guaranteed profit.")
 
